@@ -1,0 +1,4 @@
+<td-paging-bar #pagingBar [pageSize]="pageSize" [initialPage]="page" [pageSizes]="[5, 10, 15, 20]" [total]="total"  (change)="pageChange($event)">
+    <span td-paging-bar-label hide-xs translate>COMMON.LIST.ROWS_PER_PAGE</span>
+    <span hide-xs translate [translateParams]="{range: pagingBar.range, total: pagingBar.total}">COMMON.LIST.RANGE_OF_TOTAL</span>
+</td-paging-bar>		

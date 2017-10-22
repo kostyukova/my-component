@@ -1,0 +1,25 @@
+<td-layout-manage-list #manageList
+					   [opened]="media.registerQuery('gt-sm') | async"
+					   [mode]="(media.registerQuery('gt-sm') | async) ? 'side' : 'push'"
+					   [sidenavWidth]="(media.registerQuery('gt-xs') | async) ? '257px' : '100%'">
+	<md-nav-list td-sidenav-content>
+		<a md-list-item [routerLink]="'/admin/group'" [routerLinkActive]="['active']">
+			<h3 md-line translate>ADMIN.GROUPS.ALL</h3>
+		</a>
+	</md-nav-list>
+	<md-card>
+		<md-card-header>
+			<md-card-title translate>ADMIN.GROUPS.ONE</md-card-title>
+		</md-card-header>
+		<md-card-content>
+        <form #groupForm="ngForm">
+        <form-input></form-input>
+        </form>
+		</md-card-content>
+
+		<md-card-actions align="end">
+			<button md-button [disabled]="!groupForm.form.valid" (click)="onSave()">{{translate.get('COMMON.BUTTON.SAVE') | async}}</button>
+			<button md-button (click)="onCancel()">{{translate.get('COMMON.BUTTON.CANCEL') | async}}</button>
+		</md-card-actions>
+	</md-card>
+</td-layout-manage-list>

@@ -1,0 +1,11 @@
+<div layout="row" layout-align="start center" class="pad-left-sm pad-right-sm">
+	<span *ngIf="!searchBox.searchVisible" class="push-left-sm">
+		<span *ngIf="!selectedRows.length" class="md-title" translate>ADMIN.GROUPS.TITLE</span>
+		<span *ngIf="selectedRows.length && selectable"
+			class="md-body-1"><span translate [translateParams]="{number: selectedRows.length }">COMMON.ITEMS_SELECTED</span></span>
+	</span>			
+	<td-search-box #searchBox backIcon="arrow_back" [alwaysVisible]="false" class="push-right-sm"
+				placeholder="{{translate.get('COMMON.SEARCH') | async}}" (searchDebounce)="search($event)" (clear)="clean()" flex>
+	</td-search-box>
+</div>
+<md-divider></md-divider>

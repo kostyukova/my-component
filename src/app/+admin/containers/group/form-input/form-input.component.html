@@ -1,0 +1,64 @@
+<div layout="row" layout-xs="column">
+  <!-- groupName -->
+  <md-input-container flex="45">
+    <input mdInput
+           #groupNameElement
+           #groupNameControl="ngModel"
+           type="text"
+           placeholder="{{translate.get('ADMIN.GROUPS.FORM.NAME') | async}}"
+           [(ngModel)]="groupName"
+           name="groupName"
+           maxlength="255"
+           required
+           [disabled]="action=='edit'">
+    <md-hint align="start">
+                <span [hidden]="groupNameControl.pristine" class="tc-red-600">
+                  <span [hidden]="!groupNameControl.errors?.required" translate>COMMON.ERROR.REQUIRED</span>
+                </span>
+    </md-hint>
+    <md-hint align="end">{{groupNameElement.value.length}} / 255</md-hint>
+  </md-input-container>
+  <div flex></div>
+  <!-- groupLabel -->
+  <md-input-container flex="45">
+    <input mdInput
+           #groupLabelElement
+           #groupLabelControl="ngModel"
+           type="text"
+           placeholder="{{translate.get('ADMIN.GROUPS.FORM.LABEL') | async}}"
+           [(ngModel)]="groupLabel"
+           name="groupLabel"
+           maxlength="255">
+    <md-hint align="start">
+                <span [hidden]="groupLabelControl.pristine" class="tc-red-600">
+                  <span [hidden]="!groupLabelControl.errors?.required" translate>COMMON.ERROR.REQUIRED</span>
+                </span>
+    </md-hint>
+    <md-hint align="end">{{groupLabelElement.value.length}} / 255</md-hint>
+  </md-input-container>
+</div>
+<div flex="45">
+  <div translate>ADMIN.GROUPS.FORM.MEMBERS</div>
+  <td-chips
+    [items]="filteredMembers"
+    [(ngModel)]="members"
+    name="members"
+    placeholder="{{translate.get('ADMIN.GROUPS.FORM.MEMBER_NAME') | async}}"
+    (inputChange)="filterMembers($event)"
+    (add)="addMember($event)"
+    (remove)="removeMember($event)"
+    requireMatch>
+    <ng-template td-chip let-chip="chip">
+      <md-icon class="md-18" [hidden]="chip.isUser">group</md-icon>
+      <md-icon class="md-18" [hidden]="chip.isGroup">person</md-icon>
+      <span>{{chip.memberName}}</span>
+    </ng-template>
+    <ng-template td-autocomplete-option let-option="option">
+      <div layout="row" layout-align="start center">
+        <md-icon class="md-18" [hidden]="option.isUser">group</md-icon>
+        <md-icon class="md-18" [hidden]="option.isGroup">person</md-icon>
+        {{option.memberName}}
+      </div>
+    </ng-template>
+  </td-chips>
+</div>

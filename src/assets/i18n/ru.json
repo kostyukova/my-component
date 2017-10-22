@@ -1,0 +1,291 @@
+{
+	"CORE": {
+		"LAYOUT": {
+			"TITLE": "PLANNER_РУ",
+			"MENU": {
+				"MEDIAPOOL": "ASSETS",
+				"JOBS": "JOBS",
+				"GANTT": "GANTT",
+				"ADMIN": "ADMIN",
+				"JBP": "PROJECT"
+			},
+			"PROFILE": "Профиль",
+			"LOGOUT": "Выход",
+			"ROUTES": "Пути"
+		}
+	},
+	"COMMON":{
+	  "BUTTON": {
+		"OK":"Ok",
+		"CANCEL":"Отмена",
+		"SAVE":"Сохранить",
+		"EDIT": "Редактировать"
+	  },
+	  "SEARCH": "Поиск",
+	  "LIST": {
+		"ITEMS_SELECTED": "{{number} элементов выбрано",
+		"ROWS_PER_PAGE": "Элементов на странице:",
+		"RANGE_OF_TOTAL": "{{range}} из {{total}}"
+	  },
+	  "ERROR": {
+		  "REQUIRED": "Обязательное поле",
+		  "INCORRECT": "Значение поля ошибочно",
+		  "INTERNAL_SERVER": "Внутренняя ошибка приложения"
+	  }
+
+	},
+	"ADMIN":{
+	  "USERS":{
+		"TITLE": "Пользователи",
+		"ALL": "Все пользователи",
+		"ONE": "Пользователь",
+		"PROFILE": "Профиль пользователя",
+		"CHANGE_PASSWORD": "Сменить пароль",
+		"FORM":{
+			"LOGIN":"Логин",
+			"FIRST_NAME":"Имя",
+			"LAST_NAME":"Фамилия",
+			"PASSWORD":"Пароль",
+			"PASSWORD_CONFIRM": {
+				"TITLE": "Подтверждение пароля",
+				"ERROR_NOT_MATCH": "Пароли не совпадают"
+			},
+			"COMPANY":"Компания",
+			"EMAIL": {
+				"TITLE": "E-mail",
+				"ERROR_INCORRECT": "Неверный e-mail"
+			},
+			"GROUPS": "Группы",
+			"GROUP_NAME":"Введите группу",
+			"BIRTHDATE": "Birth date",
+			"AVATAR": "Avatar",
+			"AVATAR_KEEP": "Keep",
+			"AVATAR_UPLOAD": "Upload",
+			"AVATAR_DELETE": "Delete",
+			"PHONENUMBER": "Phone number",
+			"GENDER": "Пол",
+			"GENDER_MALE": "Мужской",
+			"GENDER_FEMALE": "Женский",
+			"LOCALE": "Locale"
+		},
+		"DELETE_CONFIRM": "Вы уверены, что ходите удалить пользователя?",
+		"DELETE_SUCCESS": "Пользователь удален",
+		"ERROR": {
+			"EXIST": "Пользователь с таким логином уже существует",
+			"NOT_FOUND": "Пользователь не найден"
+		}
+	  },
+	  "GROUPS":{
+		"TITLE": "Группы",
+		"ALL": "Все группы",
+		"ONE": "Группа",
+		"FORM":{
+			"NAME": "Group name",
+			"LABEL": "Group label",
+			"MEMBERS": "Members",
+			"MEMBER_NAME":"Enter member name"
+		},
+		"DELETE_CONFIRM": "Вы уверены, что ходите удалить группу?",
+		"DELETE_SUCCESS": "Группа удалена",
+		"ERROR": {
+			"EXIST": "Группа уже существует",
+			"NOT_FOUND": "Группа не найдена"
+		}
+	  }
+	},
+
+	"SHARED": {
+		"CATEGORIES": {
+			"OVERVIEW": "OVERVIEW",
+			"TASKS": "TASKS",
+			"PROCESSES": "PROCESSES",
+			"REPORT": "REPORT",
+			"MONTH": "Месяц",
+			"QUARTER": "Квартал",
+			"YEAR": "Год",
+			"GROUP": "Группы",
+			"USER": "Пользователи"
+		}
+	},
+	"MEDIAPOOL": {
+		"CARD_VIEW": {
+			"VIDEO_UNAVAILABLE": "Видео обрабатывается"
+		},
+		"SHARED":{
+			"LOADING": "Загрузка"
+		},
+		"ACTIONS": {
+			"CLOSE": "Закрыть",
+			"DOWNLOAD": "Скачать",
+			"AVAILABLE_FORMATS" : "Доступные форматы",
+			"ADD_TAG" : {
+				"TITLE": "Добавить тэг",
+				"MESSAGE": "Введите название тэга",
+				"AGREE": "Ок",
+				"DISAGREE": "Отмена"
+			},
+			"DELETE_TAG" : {
+				"TITLE": "Удалить тэг?",
+				"AGREE": "Ок",
+				"DISAGREE": "Отмена"
+			},
+			"GET_SHORTURL": {
+				"TITLE": "Создать внешнюю ссылку",
+				"MESSAGE": "Срок действия ссылки",
+				"DISAGREE": "Отмена"
+			},
+			"DELETE_ITEM": {
+				"TITLE": "Удаление",
+				"MESSAGE": "Действительно удалить файл",
+				"AGREE": "Удалить",
+				"DISAGREE": "Отмена"
+			},
+			"CREATE_FOLDER": {
+				"TITLE": "Создать папку",
+				"MESSAGE": "Введите название папки",
+				"OK": "Ok",
+				"CANCEL": "Отмена"
+			},
+			"IMPORT_FILE": {
+				"TITLE": "Импорт файла",
+				"CLOSE": "Закрыть",
+				"SUBMIT": "Добавить"
+			}
+		},
+		"SIDENAV": {
+			"ONLY_FILES": "Только файлы",
+			"FAVORITES": "Избранное",
+			"CATALOG": "Каталог"
+		},
+		"TABS": {
+			"SEARCH": "Поиск",
+			"EXT_SEARCH": "Расширенный поиск"
+		}
+	},
+	"JBP": {
+		"PROCESS_LIST":{
+			"NO_ITEMS": "No items to display"
+		},
+		"SHARED":{
+			"LOADING": "Loading"
+		},
+		"ACTIONS":{
+			"CLOSE":"Close",
+			"DELETE_ITEM": {
+				"TITLE": "Delete item",
+				"MESSAGE": "Delete this item. Do you agree?",
+				"AGREE": "Agree",
+				"DISAGREE": "Disagree"
+			},
+			"CREATE_TASK": {
+				"TITLE": "Create task",
+				"MESSAGE": "Input task name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			},
+			"CREATE_PROJECT": {
+				"TITLE": "Create project",
+				"MESSAGE": "Input project name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			},
+			"CREATE_DOCUMENT": {
+				"TITLE": "Create {{name}}",
+				"MESSAGE": "Input {{name}} name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			}
+		},
+		"SIDENAV": {
+			"TASKS": "Задачи"
+		},
+		"TABS": {
+			"SEARCH": "Search",
+			"EXT_SEARCH": "Ext. search"
+		}
+	},
+	"BPMN": {
+		"CATEGORIES": {
+			"OVERVIEW": "OVERVIEW",
+			"TASKS": "TASKS",
+			"PROCESSES": "PROCESSES",
+			"REPORT": "REPORT"
+		},
+		"COCKPIT": {
+			"TITLE": "Кокпит",
+			"MENU": {
+				"PROCESSES": "Процессы",
+				"DEPLOYMENTS": "Деплойменты"
+			}
+		},
+		"PROCESS_LIST": {
+			"TITLE": "Список прцоессов",
+			"ITEMS_SELECTED": "элементов выбрано",
+			"ACTIONS": {
+				"DELETE": {
+					"TITLE": "Удаление",
+					"MESSAGE": "Действительно удалить процесс?",
+					"AGREE": "Удалить",
+					"DISAGREE": "Отмена"
+				},
+				"COPY": {
+					"TITLE": "Копирование",
+					"MESSAGE": "Введите название",
+					"OK": "OK",
+					"CANCEL": "Отмена"
+				},
+				"COMPARE": "Сравнить",
+				"CREATE": "Создать",
+				"IMPORT": {
+					"TITLE": "Импорт процесса",
+					"CLOSE": "Закрыть",
+					"SUBMIT": "Добавить"
+				},
+				"SEARCH": "Поиск"
+			},
+			"NO_ITEMS": "Нет элементов",
+			"PAGING": {
+				"ROW_COUNT": "Элементов на странице",
+				"OF": "из"
+			}
+		},
+		"PROCESS_DIFF": {
+			"TITLE": "Сравнение процессов",
+			"SELECT_PROCESS": "Выбрать процесс",
+			"ACTIONS": "Действия",
+			"EXPORT_SVG": "Экспорт SVG",
+			"EXPORT_DIAGRAM": "Экспорт диаграммы",
+			"EXPORT_JPEG": "Экспорт JPEG",
+			"EXPORT_PNG": "Экспорт PNG"
+		},
+		"DIAGRAM": {
+			"TITLE": "Process",
+			"ACTIONS": {
+				"MENU": "Меню",
+				"SHOW_PROPERTIES": "Показать свойства",
+				"FULLSCREEN": "Полный экран",
+				"HOTKEYS": "Горячие клавиши",
+				"CHANGE_TO_XML": "Переключиться на XML",
+				"CHANGE_TO_DIAGRAM": "Переключиться на диаграмму",
+				"UNDO": "Отмена",
+				"REDO": "Повтор",
+				"EXPORT_SVG": "Экспорт SVG",
+				"EXPORT_DIAGRAM": "Экспорт диаграммы",
+				"EXPORT_JPEG": "Экспорт JPEG",
+				"EXPORT_PNG": "Экспорт PNG",
+				"SAVE_PROCESS": "Сохранить процесс",
+				"COMPARE_PROCESS": "Сравнение процессов",
+				"TOGGLE_MINIMAP": "Показать/скрыть minimap",
+				"SET_COLOR": {
+					"TITLE": "Добавить цвет",
+					"RED": "Красный",
+					"GREEN": "Зеленый",
+					"YELLOW": "Желтый"
+				}
+			}
+		},
+		"SHARED":{
+			"PROCESS_SAVED": "Процесс сохранен"
+		}
+	}
+}

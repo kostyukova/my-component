@@ -1,0 +1,293 @@
+{
+	"CORE": {
+		"LAYOUT": {
+			"TITLE": "PLANNER",
+			"MENU": {
+				"MEDIAPOOL": "ASSETS",
+				"JOBS": "JOBS",
+				"GANTT": "GANTT",
+				"ADMIN": "ADMIN",
+				"JBP": "PROJECT"
+			},
+			"PROFILE": "Profile",
+			"LOGOUT": "Logout",
+			"ROUTES": "Routes"
+		}
+	},
+	"COMMON":{
+	  "BUTTON": {
+		"OK": "Ok",
+		"CANCEL":"Cancel",
+		"SAVE":"Save",
+		"EDIT": "Edit"
+	  },
+	  "SEARCH": "Search",
+	  "LIST": {
+		"ITEMS_SELECTED": "{{number} item(s) selected",
+		"ROWS_PER_PAGE": "Rows per page:",
+		"RANGE_OF_TOTAL": "{{range}} of {{total}}"
+	  },
+	  "ERROR": {
+		  "REQUIRED": "Required",
+		  "INCORRECT": "Field value is incorrect",
+		  "INTERNAL_SERVER": "Internal server error"
+	  }
+	},
+	"ADMIN":{
+	  "USERS":{
+		"TITLE": "Users",
+		"ALL": "All users",
+		"ONE": "User",
+		"PROFILE": "Profile",
+		"CHANGE_PASSWORD": "Change password",
+		"FORM":{
+			"LOGIN":"Login",
+			"FIRST_NAME":"First name",
+			"LAST_NAME":"Last name",
+			"PASSWORD":"Password",
+			"PASSWORD_CONFIRM": {
+				"TITLE": "Password confirm",
+				"ERROR_NOT_MATCH": "Password confirm doesn't match"
+			},
+			"COMPANY":"Company",
+			"EMAIL": {
+				"TITLE": "E-mail",
+				"ERROR_INCORRECT": "Incorrect e-mail"
+			},
+			"GROUPS": "Groups",
+			"GROUP_NAME":"Enter group name",
+			"BIRTHDATE": "Birth date",
+			"AVATAR": "Avatar",
+			"AVATAR_KEEP": "Keep",
+			"AVATAR_UPLOAD": "Upload",
+			"AVATAR_DELETE": "Delete",
+			"PHONENUMBER": "Phone number",
+			"GENDER": "Gender",
+			"GENDER_MALE": "Male",
+			"GENDER_FEMALE": "Female",
+			"LOCALE": "Locale"
+		},
+		"DELETE_CONFIRM": "Are you sure you want to delete this user?",
+		"DELETE_SUCCESS": "User deleted successfully",
+		"ERROR": {
+			"EXIST": "User already exists",
+			"NOT_FOUND": "User not found"
+		}
+	  },
+	  "GROUPS":{
+		"TITLE": "Groups",
+		"ALL": "All groups",
+		"ONE": "Group",
+		"FORM":{
+			"NAME": "Group name",
+			"LABEL": "Group label",
+			"MEMBERS": "Members",
+			"MEMBER_NAME":"Enter member name"
+		},
+		"DELETE_CONFIRM": "Are you sure you want to delete this group?",
+		"DELETE_SUCCESS": "Group deleted successfully",
+		"ERROR": {
+			"EXIST": "Group already exists",
+			"NOT_FOUND": "Group not found"
+		}
+	  }
+	},
+	"SHARED": {
+		"CATEGORIES": {
+			"OVERVIEW": "OVERVIEW",
+			"TASKS": "TASKS",
+			"PROCESSES": "PROCESSES",
+			"REPORT": "REPORT",
+			"MONTH": "MONTH",
+			"QUARTER": "QUARTER",
+			"YEAR": "YEAR",
+			"GROUP": "GROUP",
+			"USER": "USER"
+		}
+	},
+
+
+	"MEDIAPOOL": {
+		"CARD_VIEW": {
+			"VIDEO_UNAVAILABLE": "Video unavailable"
+		},
+		"SHARED":{
+			"LOADING": "Loading"
+		},
+		"ACTIONS":{
+			"CLOSE":"Close",
+			"DOWNLOAD": "Download",
+			"AVAILABLE_FORMATS" : "Available formats",
+			"ADD_TAG" : {
+				"TITLE": "Add tag",
+				"MESSAGE": "Add tag name",
+				"AGREE": "Agree",
+				"DISAGREE": "Disagree"
+			},
+			"DELETE_TAG" : {
+				"TITLE": "Delete tag?",
+				"AGREE": "Agree",
+				"DISAGREE": "Disagree"
+			},
+			"GET_SHORTURL": {
+				"TITLE": "Get short url",
+				"MESSAGE": "Choose an expired date",
+				"DISAGREE": "Cancel"
+			},
+			"DELETE_ITEM": {
+				"TITLE": "Delete item",
+				"MESSAGE": "Delete this item. Do you agree?",
+				"AGREE": "Agree",
+				"DISAGREE": "Disagree"
+			},
+			"CREATE_FOLDER": {
+				"TITLE": "Create folder",
+				"MESSAGE": "Input name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			},
+			"IMPORT_FILE": {
+				"TITLE": "Import file",
+				"CLOSE": "Close",
+				"SUBMIT": "Submit"
+			}
+		},
+		"SIDENAV": {
+			"ONLY_FILES": "Only files",
+			"FAVORITES": "Favorites",
+			"CATALOG": "Catalog"
+		},
+		"TABS": {
+			"SEARCH": "Search",
+			"EXT_SEARCH": "Ext. search"
+		}
+	},
+
+	"JBP": {
+		"PROCESS_LIST":{
+			"NO_ITEMS": "No items to display"
+		},
+		"SHARED":{
+			"LOADING": "Loading"
+		},
+		"ACTIONS":{
+			"CLOSE":"Close",
+			"DELETE_ITEM": {
+				"TITLE": "Delete item",
+				"MESSAGE": "Delete this item. Do you agree?",
+				"AGREE": "Agree",
+				"DISAGREE": "Disagree"
+			},
+			"CREATE_TASK": {
+				"TITLE": "Create task",
+				"MESSAGE": "Input task name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			},
+			"CREATE_PROJECT": {
+				"TITLE": "Create project",
+				"MESSAGE": "Input project name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			},
+			"CREATE_DOCUMENT": {
+				"TITLE": "Create {{name}}",
+				"MESSAGE": "Input {{name}} name",
+				"OK": "Ok",
+				"CANCEL": "Cancel"
+			}
+		},
+		"SIDENAV": {
+			"TASKS": "Tasks"
+		},
+		"TABS": {
+			"SEARCH": "Search",
+			"EXT_SEARCH": "Ext. search"
+		}
+	},
+
+	"BPMN": {
+		"CATEGORIES": {
+			"OVERVIEW": "OVERVIEW",
+			"TASKS": "TASKS",
+			"PROCESSES": "PROCESSES",
+			"REPORT": "REPORT"
+		},
+		"COCKPIT": {
+			"TITLE": "Cockpit",
+			"MENU": {
+				"PROCESSES": "Processes",
+				"DEPLOYMENTS": "Deployments"
+			}
+		},
+		"PROCESS_LIST": {
+			"TITLE": "Process list",
+			"ITEMS_SELECTED": "item(s) selected",
+			"ACTIONS": {
+				"DELETE": {
+					"TITLE": "Delete",
+					"MESSAGE": "Delete this process. Do you agree?",
+					"AGREE": "Agree",
+					"DISAGREE": "Disagree"
+				},
+				"COPY": {
+					"TITLE": "Copy",
+					"MESSAGE": "Input name",
+					"OK": "OK",
+					"CANCEL": "Cancel"
+				},
+				"COMPARE": "Compare",
+				"CREATE": "Create",
+				"IMPORT": {
+					"TITLE": "Import processes",
+					"CLOSE": "Close",
+					"SUBMIT": "Submit"
+				},
+				"SEARCH": "Search"
+			},
+			"NO_ITEMS": "No items to display",
+			"PAGING": {
+				"ROW_COUNT": "Row per page",
+				"OF": "of"
+			}
+		},
+		"PROCESS_DIFF": {
+			"TITLE": "Process differ",
+			"SELECT_PROCESS": "Select process",
+			"ACTIONS": "Actions",
+			"EXPORT_SVG": "Export SVG",
+			"EXPORT_DIAGRAM": "Export diagram",
+			"EXPORT_JPEG": "Export JPEG",
+			"EXPORT_PNG": "Export PNG"
+		},
+		"DIAGRAM": {
+			"TITLE": "Process",
+			"ACTIONS": {
+				"MENU": "Menu",
+				"SHOW_PROPERTIES": "Show properties",
+				"FULLSCREEN": "Fullscreen",
+				"HOTKEYS": "Hotkeys",
+				"CHANGE_TO_XML": "Change to XML",
+				"CHANGE_TO_DIAGRAM": "Change to Diagram",
+				"UNDO": "Undo",
+				"REDO": "Redo",
+				"EXPORT_SVG": "Export SVG",
+				"EXPORT_DIAGRAM": "Export diagram",
+				"EXPORT_JPEG": "Export JPEG",
+				"EXPORT_PNG": "Export PNG",
+				"SAVE_PROCESS": "Save process",
+				"COMPARE_PROCESS": "Compare process",
+				"TOGGLE_MINIMAP": "Toggle minimap",
+				"SET_COLOR": {
+					"TITLE": "Set color",
+					"RED": "Red",
+					"GREEN": "Green",
+					"YELLOW": "Yellow"
+				}
+			}
+		},
+		"SHARED":{
+			"PROCESS_SAVED": "Process saved"
+		}
+	}
+}

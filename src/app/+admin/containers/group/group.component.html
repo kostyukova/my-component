@@ -1,0 +1,28 @@
+<td-layout-manage-list #manageList
+					   [opened]="media.registerQuery('gt-sm') | async"
+					   [mode]="(media.registerQuery('gt-sm') | async) ? 'side' : 'push'"
+					   [sidenavWidth]="(media.registerQuery('gt-xs') | async) ? '257px' : '100%'">
+	<md-nav-list td-sidenav-content>
+		<a md-list-item [routerLink]="'/admin/group'" [routerLinkActive]="['active']">
+			<h3 md-line translate>ADMIN.GROUPS.ALL</h3>
+		</a>
+	</md-nav-list>
+	<ng-template tdLoading="groups.list">
+	<md-card>
+		<md-card-content>
+			<mesp-search
+				(onSearch)="onSearch($event)"
+				(onClean)="onClean($event)"></mesp-search>
+			<mesp-list
+				[filteredItems]="items"
+				[icon]="'group'"
+				[idField]="'name'"
+    			(onDelete)="onDelete($event)"></mesp-list>
+		</md-card-content>
+		<md-card-actions align="end">
+			<a md-fab [routerLink]="['add']"><md-icon class="md-24">add</md-icon></a>
+		</md-card-actions>
+		<mesp-paging [pageSize]="pageSize" [page]="page" [total]="100" (onPageChange)="onPageChange($event)"></mesp-paging>
+	</md-card>
+	</ng-template>
+</td-layout-manage-list>
